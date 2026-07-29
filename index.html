@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protein Intake Calculator — Free Online | Tabutility</title>
+  <meta name="description" content="Calculate your optimal daily protein intake based on your weight, goal and activity level.">
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://protein-calculator.tabutility.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://protein-calculator.tabutility.com/">
+  <meta property="og:title" content="Protein Intake Calculator — Free Online | Tabutility">
+  <meta property="og:description" content="Calculate your optimal daily protein intake based on your weight, goal and activity level.">
+  <meta property="og:image" content="https://tabutility.com/og-blog.png">
+  <meta property="og:site_name" content="Tabutility">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://tabutility.com/og-blog.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <meta name="theme-color" content="#0f172a">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Protein Intake Calculator","url":"https://protein-calculator.tabutility.com/","description":"Calculate your optimal daily protein intake based on your weight, goal and activity level.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"provider":{"@type":"Organization","name":"Tabutility","url":"https://tabutility.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Tabutility","item":"https://tabutility.com"},{"@type":"ListItem","position":2,"name":"Protein Intake Calculator","item":"https://protein-calculator.tabutility.com/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much protein do I need per day?","acceptedAnswer":{"@type":"Answer","text":"Most research recommends 1.6–2.2g of protein per kg of bodyweight for muscle building, and 0.8g/kg for general health maintenance."}},{"@type":"Question","name":"Does eating more protein build more muscle?","acceptedAnswer":{"@type":"Answer","text":"Up to a point, yes. Beyond about 2.2g/kg/day, extra protein is simply used for energy. The key is consistent training combined with adequate protein."}},{"@type":"Question","name":"What are good sources of protein?","acceptedAnswer":{"@type":"Answer","text":"Chicken, eggs, fish, lean beef, Greek yogurt, tofu, legumes and protein supplements are all high-quality protein sources."}}]}</script>
+  <script>window.addEventListener('load',function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-78VZWJ5B1W';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','G-78VZWJ5B1W');});</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7039091592734005" crossorigin="anonymous"></script>
+</head>
+<body style="margin:0;font-family:'Segoe UI',Arial,sans-serif;background:#0f172a;color:#f1f5f9;min-height:100vh">
+<nav style="background:#1e293b;padding:11px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #334155"><a href="https://tabutility.com" style="color:#fff;font-weight:800;font-size:16px;text-decoration:none">⚡ Tabutility</a><a href="https://tabutility.com/blog/" style="color:#a5b4fc;font-size:13px;font-weight:700;text-decoration:none">📖 Blog</a></nav>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div id="app" style="max-width:640px;margin:8px auto;padding:0 8px 32px">
+  <h1 style="font-size:24px;font-weight:800;margin:0 0 4px">💪 Protein Intake Calculator</h1>
+  <p style="color:#94a3b8;font-size:14px;margin:0 0 20px">Calculate your optimal daily protein intake based on your weight, goal and activity level.</p>
+  <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155;margin-bottom:14px">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px">
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Body Weight</label><div style="display:flex;gap:6px;margin-top:6px"><input id="wt" type="number" placeholder="160" oninput="calc()" style="flex:1;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 10px;color:#f1f5f9;font-size:15px;outline:none"><select id="unit" onchange="calc()" style="background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 8px;color:#f1f5f9;font-size:13px;outline:none"><option>lbs</option><option>kg</option></select></div></div>
+      <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Activity Level</label><select id="act" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:13px;margin-top:6px;outline:none">
+        <option value="0.8">Sedentary</option>
+        <option value="1.2" selected>Lightly active</option>
+        <option value="1.6">Moderately active</option>
+        <option value="2.0">Very active / athlete</option>
+      </select></div>
+    </div>
+    <div><label style="font-size:12px;color:#94a3b8;font-weight:600">Goal</label><select id="goal" onchange="calc()" style="width:100%;background:#0f172a;border:1px solid #334155;border-radius:6px;padding:10px 12px;color:#f1f5f9;font-size:14px;margin-top:6px;outline:none">
+      <option value="0.8">Lose weight / maintain muscle</option>
+      <option value="1.0" selected>General health & maintenance</option>
+      <option value="1.6">Build muscle / body recomposition</option>
+      <option value="2.2">Maximize muscle gain</option>
+    </select></div>
+  </div>
+  <div id="results" style="display:none">
+    <div style="background:#1e293b;border-radius:10px;padding:20px;border:1px solid #334155;margin-bottom:14px;text-align:center">
+      <div style="font-size:12px;color:#94a3b8;margin-bottom:6px">DAILY PROTEIN TARGET</div>
+      <div id="r-prot" style="font-size:52px;font-weight:900;color:#f87171"></div>
+      <div style="font-size:14px;color:#94a3b8;margin-top:4px">grams per day</div>
+      <div style="margin-top:12px;font-size:13px;color:#64748b" id="r-per-meal"></div>
+    </div>
+    <div style="background:#1e293b;border-radius:10px;padding:18px;border:1px solid #334155">
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:12px">WHAT THAT LOOKS LIKE</div>
+      <div id="r-sources" style="font-size:13px;color:#94a3b8;line-height:1.9"></div>
+    </div>
+  </div>
+  <div id="prompt" style="color:#64748b;font-size:14px;text-align:center;padding:20px">Enter your weight above to calculate your protein target</div>
+</div>
+<script>
+function calc(){
+  const wt=parseFloat(document.getElementById('wt').value);
+  const unit=document.getElementById('unit').value;
+  const act=parseFloat(document.getElementById('act').value);
+  const goal=parseFloat(document.getElementById('goal').value);
+  if(!wt){document.getElementById('results').style.display='none';document.getElementById('prompt').style.display='block';return;}
+  const kg=unit==='lbs'?wt*0.453592:wt;
+  const gPerKg=Math.min(goal,act)*1.0+Math.max(goal,act)*0.5;
+  const daily=Math.round(kg*Math.max(goal,act*0.8));
+  document.getElementById('results').style.display='block';
+  document.getElementById('prompt').style.display='none';
+  document.getElementById('r-prot').textContent=daily+'g';
+  document.getElementById('r-per-meal').textContent='That's roughly '+Math.round(daily/4)+'g per meal across 4 meals';
+  const chicken=Math.round(daily/0.31);
+  const eggs=Math.round(daily/6);
+  const greek=Math.round(daily/0.10);
+  document.getElementById('r-sources').innerHTML=
+    '🍗 <b style="color:#f1f5f9">Chicken breast:</b> '+chicken+'g (cooked)<br>'+
+    '🥚 <b style="color:#f1f5f9">Eggs:</b> ~'+eggs+' large eggs<br>'+
+    '🥛 <b style="color:#f1f5f9">Greek yogurt (0%):</b> '+greek+'g<br>'+
+    '🐟 <b style="color:#f1f5f9">Tuna (canned):</b> '+Math.round(daily/0.26)+'g<br>'+
+    '<span style="color:#475569;font-size:11px">Protein content varies. Aim to spread intake across meals.</span>';
+}
+</script>
+<div style="max-width:640px;margin:12px auto;padding:0 8px"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7039091592734005" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+<div style="margin:0 auto 24px;max-width:640px;background:#1e293b;border-radius:10px;padding:14px 18px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid #334155" onclick="window.open('https://www.amazon.com/s?k=health+nutrition+fitness+books&tag=tabutility-20','_blank','noopener noreferrer')" title="Improve your health?">
+  <span style="font-size:28px;flex-shrink:0">📚</span>
+  <div style="min-width:0">
+    <div style="font-size:13px;font-weight:700;color:#f1f5f9;margin-bottom:3px">Improve your health?</div>
+    <div style="font-size:12px;color:#94a3b8">Browse health & nutrition books <span style="color:#f59e0b;white-space:nowrap">→ Browse on Amazon</span></div>
+    <div style="font-size:10px;color:#475569;margin-top:3px">As an Amazon Associate we earn from qualifying purchases.</div>
+  </div>
+</div>
+<h2 style="font-size:15px;font-weight:700;color:#94a3b8;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;max-width:640px;margin-left:auto;margin-right:auto">Related Tools</h2>
+<div style="max-width:640px;margin:0 auto 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px">
+      <a href="https://macro-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Macro Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://tdee-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">TDEE & Calorie Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://calorie-deficit-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Calorie Deficit Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+      <a href="https://body-fat-calculator.tabutility.com/" style="display:block;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:12px 16px;text-decoration:none;color:inherit">
+        <div style="font-size:13px;font-weight:600;color:#f1f5f9">Body Fat % Calculator</div><div style="font-size:11px;color:#94a3b8;margin-top:2px">Wellness</div></a>
+    </div>
+</body>
+</html>
